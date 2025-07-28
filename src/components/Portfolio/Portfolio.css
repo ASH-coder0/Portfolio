@@ -1,0 +1,37 @@
+/* src/components/portfolio/Portfolio.css */
+.portfolio {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: #f8f9ff;
+}
+
+/* Section Styles (shared) */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #1a2a6c;
+  margin-bottom: 15px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #1a2a6c, #d32f2f);
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+}

@@ -1,0 +1,209 @@
+/* src/components/portfolio/styles/Skills.css */
+
+/* Skills Section */
+.skills {
+  padding: 100px 20px;
+  background: white;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.skill-category {
+  background: #f8f9ff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+  font-size: 24px;
+  color: #1a2a6c;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.skill-category h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #1a2a6c, #d32f2f);
+  border-radius: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(26, 42, 108, 0.1);
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: rgba(26, 42, 108, 0.2);
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f0f4ff;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+.skill-icon.html {
+  background-image: url('../../../../public/image/html.png');
+}
+
+.skill-icon.css {
+  background-image: url('../../../../public/image/file.png');
+}
+
+.skill-icon.js {
+  background-image: url('../../../../public/image/java-script.png');
+}
+
+/* .skill-icon.react {
+  /* background-image: url(''); */
+/* } */
+
+.skill-icon.bootstrap {
+  background-image: url('../../../../public/image/bootstrap.png');
+}
+
+.skill-icon.responsive {
+  background-image: url('../../../../public/image/responsive-design.png');
+}
+
+.skill-icon.node {
+  background-image: url('../../../../public/image/nodejs.png');
+  /* background-size: cover; */
+}
+
+ .skill-icon.express {
+  background-image: url('../../../../public/image/express.png');
+}
+  
+.skill-icon.mySQL {
+  background-image: url('../../../../public/image/mysql.png');
+}
+
+.skill-icon.rest {
+  background-image: url('../../../../public/image/api.png');
+}
+
+
+.skill-icon.git {
+  background-image: url('../../../../public/image/github.png');
+}
+
+
+.skill-icon.vs {
+  background-image: url('../../../../public/image/logo.png');
+}
+
+.skill-icon.npm {
+  background-image: url('../../../../public/image/NPM.png');
+}
+
+.skill-icon.figma {
+  background-image: url('../../../../public/image/figma.png');
+}
+
+
+.skill-item span {
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Progress Bar Styles (if you want to add proficiency levels) */
+.skill-progress {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #1a2a6c, #2a4a9c);
+  border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 80px 20px;
+  }
+  
+  .skill-category {
+    padding: 25px;
+  }
+  
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .skill-item {
+    padding: 15px 10px;
+  }
+  
+  .skill-item span {
+    font-size: 14px;
+  }
+}

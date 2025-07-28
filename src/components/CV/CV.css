@@ -19,14 +19,58 @@ header {
   position: relative;
 }
 
+/* Add to your CSS
+.portfolio-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.btn.portfolio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c3c4c9;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px solid #2a4a9c;
+}
+
+.btn.portfolio-btn:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} 
+/* c=change upto here */
+.portfolio-btn {
+  align-items:relative;
+    background: #1a2a6c;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 2px solid #1a2a6c;
+    display: flex;
+    width: fit-content;
+    
+}
+.portfolio-btn:hover{
+  background-color: #d32f2f;
+
+}
 .profile-img {
   position: absolute;
   right: 40px;
   top: 40px;
-
+  width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-image: url("../public/image/IMG_8080.jpg");
+  background-image: url("/public/image/IMG_8080.jpg");
   background-size: cover;
   background-position: center;
   border: 4px solid white;
