@@ -14,7 +14,7 @@ const About = () => {
           <p>
             I'm a passionate Computer Science student currently in my 6th
             semester at Tribhuvan University. My journey in web development
-            started 2 years ago, and I've been hooked ever since.
+            started 1.5 years ago, and I've been hooked ever since.
           </p>
           <p>
             I specialize in creating responsive, user-friendly websites and

@@ -1,6 +1,24 @@
 /* App.css */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+/* Ensure body takes full content height */
+html, body {
+  height: auto !important;
+  min-height: 100vh;
+}
 
+/* Improve PDF rendering quality */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Hide elements you don't want in PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
 .container {
   max-width: 100%;
   width: 100%;

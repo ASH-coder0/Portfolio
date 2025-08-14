@@ -3,7 +3,6 @@ import React from "react";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
@@ -27,7 +26,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/ashwin-gautam-a0109733b/"
+            href="https://www.linkedin.com/in/ashwingautam"
             target="_blank"
             rel="noopener noreferrer"
           >
